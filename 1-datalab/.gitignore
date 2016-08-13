@@ -1,0 +1,7 @@
+.*
+!.gitignore
+btest
+fshow
+ishow
+bits.p.c
+CMakeLists.txt
