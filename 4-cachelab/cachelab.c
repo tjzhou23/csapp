@@ -11,8 +11,9 @@ trans_func_t func_list[MAX_TRANS_FUNCS];
 int func_counter = 0; 
 
 /* 
- * printSummary - Summarize the cache simulation statistics. Student cache simulators
- *                must call this function in order to be properly autograded. 
+ * printSummary - Summarize the cache simulation statistics. Student
+ *                cache simulators must call this function in order to
+ *                be properly autograded.
  */
 void printSummary(int hits, int misses, int evictions)
 {

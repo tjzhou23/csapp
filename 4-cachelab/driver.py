@@ -128,8 +128,8 @@ def main():
     
     # Emit autoresult string for Autolab if called with -A option
     if autograde:
-        autoresult="%.1f:%d:%d:%d" % (total_score, miss32, miss64, miss61)
-        print "\nAUTORESULT_STRING=%s" % autoresult
+        autoresult="{\"scores\": {\"Autograded\": %.1f}, \"scoreboard\": [%.1f, %d, %d, %d, %d]}" % (total_score, total_score, miss32+miss64+miss61, miss32, miss64, miss61)
+        print "%s" % autoresult
     
     
 # execute main only if called as a script
